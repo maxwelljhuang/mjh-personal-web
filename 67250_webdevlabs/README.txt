@@ -1,2 +1,2 @@
-67-250 Web Dev Labs
+67-250 WebDev Lab 1
 Maxwell Huang (maxwell 2)
