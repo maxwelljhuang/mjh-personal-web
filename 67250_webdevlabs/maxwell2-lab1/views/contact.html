@@ -15,9 +15,44 @@
     </header>
 
     <main class="main">
-        <h2 style="color:blue; background:lightblue">Hi, my name is Maxwell!</h2>
-        <img src="static/profile-image.jpg" alt="My Profile Picture">
-        <p id="intro">Welcome to my personal website where you can learn more about me, my background, and interests.</p>
+        <h2 style="color:blue; background:lightblue">Contact Me</h2>
+        
+        <!-- Contact Form -->
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        
+        <!-- Contact Information Table -->
+        <h3>My Contact Information</h3>
+        <table border="1">
+            <tr>
+                <th>Contact Method</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>maxwell2@andrew.cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>(925) 915-6202</td>
+            </tr>
+
+        </table>
     </main>
 
     <nav>
