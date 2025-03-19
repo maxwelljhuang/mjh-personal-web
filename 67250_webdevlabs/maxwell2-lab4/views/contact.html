@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxwell Huang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Maxwell Huang">
+    <title>Maxwell Huang</title>
+</head>
+<body onload="addYear()">
+
+    <header>
+        <h1 id="webname">Maxwell Huang</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="fun.html">For fun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2 style="color:grey; background:white">Contact Me</h2>
+        
+        <form action="#" method="post" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <span id="commentError" class="error-message"></span>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        
+        <h3>My Contact Information</h3>
+        <table border="1">
+            <tr>
+                <th>Contact Method</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>maxwell2@andrew.cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>(925) 915-6202</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p><span id="copyYear"></span> Created and Designed by Maxwell Huang :D</p>
+    </footer>
+
+</body>
+</html>

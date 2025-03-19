@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxwell Huang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Maxwell Huang">
+    <title>Maxwell Huang</title>
+</head>
+<body onload="addYear()">
+
+    <header>
+        <h1 id="webname">Maxwell Huang</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="views/cv.html">CV</a></li>
+                <li><a href="views/contact.html">Contact me</a></li>
+                <li><a href="views/fun.html">For fun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2 id="greeting" style="color:grey; background:white">Hi, my name is Maxwell!</h2>
+        <img src="static/maxwell-huang.jpeg" alt="My Profile Picture">
+        
+        <div id="shortBio">
+            <p id="intro">Welcome to my personal website where you can learn more about me, my background, and interests.</p>
+            <button id="readMoreBtn" class="read-btn">Read More</button>
+        </div>
+        
+        <div id="extendedBio">
+            <p id="intro">Welcome to my personal website where you can learn more about me, my background, and interests.</p>
+            <p>I'm currently studying Information Systems and Computer Science at Carnegie Mellon University. I have experience in full-stack development using technologies like Svelte/Typescript, Django/Python, and PostgreSQL.</p>
+            <p>I'm passionate about using technology to solve real-world problems, particularly in areas like healthcare efficiency and sustainability. When I'm not coding, I enjoy playing tennis, basketball, and exploring food scenes.</p>
+            <button id="readLessBtn" class="read-btn">Read Less</button>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="copyYear"></span> Created and Designed by Maxwell Huang :D</p>
+    </footer>
+
+</body>
+</html>

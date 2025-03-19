@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../static/script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,7 @@
     <title>Maxwell Huang</title>
 </head>
 
-<body onload="addYear()">
+<body style="font-family: Arial">
 
     <main class="main">
         <header>
@@ -31,9 +30,8 @@
         </header>
         <h2 style="color:grey; background:white">Things I love to do for fun</h2>
         
-        <button onclick="showList()">Click to see...</button>
-        
-        <ul style="display: none;">
+        <!-- List of Favorite Activities -->
+        <ul>
             <li>Hiking</li>
             <li>Cooking</li>
             <li>Playing tennis and basketball</li>
@@ -42,7 +40,7 @@
     </main>
 
     <footer>
-        <p><span id="copyYear"></span> Created and Designed by Maxwell Huang :D</p>
+        <p>&copy; Created and Designed by Maxwell Huang :D</p>
     </footer>
 
 </body>
