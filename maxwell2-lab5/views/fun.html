@@ -15,7 +15,7 @@
     <title>Maxwell Huang</title>
 </head>
 
-<body onload="addYear()">
+<body onload="addYear(); fetchLatestCMUVideo()">
 
     <header>
         <h1 id="webname">Maxwell Huang</h1>
@@ -33,13 +33,13 @@
         <div class="item1">
             <h2 style="color:grey; background:white">Things I love to do for fun</h2>
             
-            <!-- List of Favorite Activities -->
             <ul>
                 <li>Hiking</li>
                 <li>Cooking</li>
                 <li>Playing tennis and basketball</li>
                 <li>Camping</li>
             </ul>
+            
             
         </div>
         
@@ -48,11 +48,16 @@
         </div>
         
         <div class="item3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oHGGr8M_NpA" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+            <h3>Latest CMU YouTube Video</h3>
+            <div id="latestVideoContainer">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed?listType=user_uploads&list=cmu" 
+                    title="Latest CMU YouTube Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
         
         <div class="item4">
