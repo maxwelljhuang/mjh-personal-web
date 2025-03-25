@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/template.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxwell Huang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Maxwell Huang">
+    <title>Maxwell Huang - Responsive Template</title>
+</head>
+<body onload="addYear(); highlightActiveLink();">
+
+    <div class="container">
+        <header class="header">
+            <h1 id="webname">Maxwell Huang</h1>
+        </header>
+        
+        <nav class="nav">
+            <i class="fas fa-bars" id="menuIcon"></i>
+            <ul id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="views/cv.html">CV</a></li>
+                <li><a href="views/contact.html">Contact me</a></li>
+                <li><a href="views/fun.html">For fun</a></li>
+                <li><a href="template.html">Responsive Template</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mainimg">
+            <h2>About Me</h2>
+            <img src="static/maxwell-huang.jpeg" alt="My Profile Picture">
+        </div>
+        
+        <div class="maincontent">
+            <h2>My Background</h2>
+            <p>I'm currently studying Information Systems and Computer Science at Carnegie Mellon University. I have experience in full-stack development using technologies like Svelte/Typescript, Django/Python, and PostgreSQL.</p>
+            <p>I'm passionate about using technology to solve real-world problems, particularly in areas like healthcare efficiency and sustainability.</p>
+        </div>
+        
+        <div class="bottomcontent">
+            <h2>My Projects & Experience</h2>
+            <p>I've worked on various projects, including research at Carnegie Mellon University, developing a reusable Python package for manipulating time-series data aimed at improving healthcare efficiency.</p>
+            <p>I'm also a part-time full-stack developer at LearnSuite AI, working on feature development for student management and student/teacher portal, as well as AI Agents for scheduling with CrewAI.</p>
+            <p>Previously, I worked on a research project under Professor Lu at Santa Clara University for AI fairness/bias in automated resume filtering. The research paper titled "National Origin Discrimination in Deep-learning-powered Automated Resume Screening" was awarded "Best Paper Award" - ISAP 2022 at Copenhagen, Denmark.</p>
+        </div>
+        
+        <footer class="footer">
+            <p><span id="copyYear"></span> Created and Designed by Maxwell Huang :D</p>
+        </footer>
+    </div>
+
+</body>
+</html>

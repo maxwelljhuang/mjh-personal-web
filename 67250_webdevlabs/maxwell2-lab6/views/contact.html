@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxwell Huang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Maxwell Huang">
+    <title>Maxwell Huang</title>
+</head>
+<body onload="addYear(); highlightActiveLink();">
+
+    <header>
+        <h1 id="webname">Maxwell Huang</h1>
+        <nav>
+            <i class="fas fa-bars" id="menuIcon"></i>
+            <ul id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="fun.html">For fun</a></li>
+                <li><a href="../template.html">Responsive Template</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainLayout">
+        <div class="item1">
+            <h2 style="color:grey; background:white">Find Me</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4387567752257!2d-79.94517572342556!3d40.443433971364225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1711207324389!5m2!1sen!2sus" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <div class="item2">
+            <h2 style="color:grey; background:white">Contact Me</h2>
+            
+            <form action="#" method="post" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="nameError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                    <span id="commentError" class="error-message"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            
+            <h3>My Contact Information</h3>
+            <table border="1">
+                <tr>
+                    <th>Contact Method</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>maxwell2@andrew.cmu.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>(925) 915-6202</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="copyYear"></span> Created and Designed by Maxwell Huang :D</p>
+    </footer>
+
+</body>
+</html>
